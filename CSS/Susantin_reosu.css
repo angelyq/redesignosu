@@ -1,0 +1,84 @@
+body {
+    background-color: #18171C;
+}
+.navbar {
+    background-color: #221F2E;
+}
+body.modal-open .modal {
+    display: flex !important;
+    height: 100%;
+} 
+body.modal-open .modal .modal-dialog {
+    margin: auto;
+}
+ul {
+    list-style-type: none;
+}
+.userpage {
+    align-items: center;
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+    background-color:#2E293D;
+    border-radius: 25px;
+}
+.sidenav {
+    align-items: center;
+    height: 25%;
+    width: 100%;
+    padding-top: -10px;
+    object-fit: contain;
+    background-color:#24222A;
+    border-radius: 25px;
+}
+.container-fluid {
+    display: flex;
+    justify-content: center;
+}
+.row {
+    padding-top: 83px;
+    width: 100%;
+    justify-content: center;
+}
+.pfp {
+    border-radius: 25px;
+}
+.carousel {
+    background-color: #24222A; 
+    border-radius: 25px;
+}
+.carousel-inner img {
+    width: 50%;
+    height: 50%; 
+    border-radius: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.carousel-inner {
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+}
+.dashboard {
+    color: white;
+    background-color: #2E293D;
+    border-radius: 25px;
+    padding-left: 20px;
+}
+.bruh {
+    text-decoration: none; 
+    background-color: none;
+    color: white;
+    font-size: 10;
+    text-align: center;
+}
+.card {
+    background-color: #2E293D;
+}
+.osuhow {
+    padding-top: 10px;
+}
+.newlyranked {
+    height: 5%;
+    width: 100%;
+}

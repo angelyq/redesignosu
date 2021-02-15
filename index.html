@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>dashboard | osu!</title>
+    <link rel="shortcut icon" type="image/jpg" href="Images/osu!logo.png"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/Susantin_reosu.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+<!-- Bootstrap 4 Navigation Bar, www.w3schools.com/bootstrap4/bootstrap_navbar.asp. Accessed 19 Jan 2021.
+
+Bootstrap 4 Navs, www.w3schools.com/bootstrap4/bootstrap_navs.asp. Accessed 19 Jan 2021. 
+
+Herbert, Dean. “Osu!” Welcome | Osu!, osu.ppy.sh/home. Accessed 19 Jan 2021. (Colors)
+
+a lot of useful bootstrap classes here to make an easy basic navbar-->
+    <nav class="navbar navbar-inverse scrolling-navbar navbar-expand-sm navbar-dark fixed-top">
+      <div class="navbar-header">
+<!-- Herbert, Dean. “Brand Identity Guidelines.” Brand Identity Guidelines · Knowledge Base | Osu!, osu.ppy.sh/wiki/en/Brand_identity_guidelines. Accessed 19 Jan 2021. -->
+<!-- logo goes first -->
+      <a class="navbar-brand" href="Susantin_index.html"> <img src="Images/iconosu.png" alt="white circle with the word osu! in it" width=50px> </a>
+    </div>
+<!-- ...then the actual navbar -->
+      <ul class="nav navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="Susantin_index.html">home!</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://osu.ppy.sh/beatmapsets" target="_blank">beatmaps!</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://osu.ppy.sh/rankings/osu/performance" target="_blank">rankings!</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://osu.ppy.sh/community/forums" target="_blank">community!</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://osu.ppy.sh/wiki/en/Main_Page" target="_blank">help!</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbar-brand" data-toggle="modal" data-target="#myModal"> <img src="Images/searchp.png" alt="search icon" width="20px"></a>
+        </li>
+      </ul>
+<!-- wanted to try a little dropdown for one of the tabs. in the case of my redesign, 
+all of the dropdown tabs shown in the navbar in the original website would simply just be in the page the tab takes you to, instead of a dropdown.
+this would make make navigation a bit easier on the brain (it's not as specific)-->
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link">log out</a></li>
+        <li class="nav-item dropdown active"><a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+          <img src="Images/lang.png" alt="language icon" width="25px"> english</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item">Беларуская мова</a>
+              <a class="dropdown-item">Česky</a>
+              <a class="dropdown-item">Deutsch</a>
+              <a class="dropdown-item">español</a>
+              <a class="dropdown-item active">English</a>
+              <a class="dropdown-item">français</a>
+              <a class="dropdown-item">Bahasa Indonesia</a>
+              <a class="dropdown-item">日本語</a>
+              <a class="dropdown-item">Nederlands</a>
+              <a class="dropdown-item">polski</a>
+              <a class="dropdown-item">Português (Brasil)</a>
+              <a class="dropdown-item">Русский</a>
+              <a class="dropdown-item">Svenska</a>
+              <a class="dropdown-item">Türkçe</a>
+              <a class="dropdown-item">Tiếng Việt</a>
+            </div>
+        </li>
+        
+      </ul>
+        <a class="navbar-brand" href="#"> <img class="pfp" src="Images/owoa.png" alt="profile picture" width=50px> </a>
+        
+      </div>
+    </nav>
+
+<!-- Bootstrap 4 Buttons, www.w3schools.com/bootstrap4/bootstrap_buttons.asp. Accessed 19 Jan 2021.
+
+Bootstrap 4 Carousel, www.w3schools.com/bootstrap4/bootstrap_carousel.asp. Accessed 19 Jan 2021.
+
+Mark Otto, Jacob Thornton. “Grid System.” · Bootstrap, getbootstrap.com/docs/4.0/layout/grid/. Accessed 19 Jan 2021.-->
+
+<div class="container-fluid">
+<!--using the bootstrap 4 grid system-->
+  <div class="row">
+    <div class="col-sm-8">
+      <h2 class="dashboard">♪.*☆ dashboard!</h2>
+<!-- i thought carousels looked pretty cool. they make more daunting amounts of information look condensed and easy to digest for the viewer-->
+      <div class="carousel">
+      <div id="slide" class="carousel slide" data-ride="carousel">
+       
+        <ul class="carousel-indicators">
+          <li data-target="#slide" data-slide-to="0" class="active"></li>
+          <li data-target="#slide" data-slide-to="1"></li>
+          <li data-target="#slide" data-slide-to="2"></li>
+        </ul>
+     
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+          <a href="Susantin_yoshiarticle.html"><img src="Images/yoshe.png" alt="the nintendo character, yoshi, sleeping soundly on the ground, thinking of watermelon. the text says, 'newly featured, yoshi'"> </a>
+          </div>
+          <div class="carousel-item">
+          <a href="Susantin_kirbyarticle.html"><img src="Images/kirbe.png" alt="the nintendo character, kirby, sleeping soundly on the ground. the text says, 'newly featured, kirby'"></a>
+          </div>
+          <div class="carousel-item">
+          <a href="Susantin_isabellearticle.html"><img src="Images/isbl.png" alt="the nintendo character, isabelle smiling and waving happily. the text says, 'newly feature, isabelle'"></a>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#slide" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#slide" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+
+      
+    </div>
+<!-- Bootstrap 4 Collapse, www.w3schools.com/bootstrap4/bootstrap_collapse.asp. Accessed 19 Jan 2021.-->
+<!--to put more content on a smaller screen, buttons in an accordian style work well.-->
+    <div class="osuhow" id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-outline-light btn-block" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              what is osu?
+            </button>
+          </h5>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body text-center text-light">
+            osu! is an exciting rhythm game developed primarily by Dean "peppy" Herbert. It includes gamemodes such as osu!standard, osu!taiko, osu!catch, and osu!mania.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn collapsed btn-outline-light btn-block" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Newly Ranked Maps
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body text-light">
+            <img class="newlyranked"src="Images/newly.png">
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn collapsed btn-outline-light btn-block" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            osu! Chat
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body text-light">
+          <b>PhantomShadowX:</b> osu! is a really fun game!<br>
+          <b> SnellyCS:</b> my map just got ranked! <br>
+          <b> TheFormalCow:</b> my acc is bad <br>
+          <b> Stumpts:</b> i'm officially 7 digit! <br>
+          <b> trackpad neeko:</b> i play on a trackpad <br>
+          <b>Stumpalope:</b> congrats, stumpts!<br>
+          <br>
+          <input class="btn-block"type="text" placeholder="type to 'chat'!"></input>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="col-sm-4">
+      <img class="userpage" src="Images/userpage.png">
+      <div class="uwu">
+    <a class="sidenavs" href="https://osu.ppy.sh/home/download" target="_blank"><img class="sidenav" src="Images/osudownload.png"></a>
+    <a class="sidenavs" href="https://osu.ppy.sh/home/support" target="_blank"><img class="sidenav" src="Images/osusupport.png"></a>
+<!-- “Twitter Brand Resources.” Twitter, Twitter, about.twitter.com/en_us/company/brand-resources.html. Accessed 19 Jan 2021.-->
+    <a class="sidenavs" href="https://osu.ppy.sh/wiki/en/Twitter" target="_blank"><img class="sidenav" src="Images/osufollow.png"></a>
+  </div>
+  </div>
+</div>
+</div>
+<footer class="text-center text-secondary text-lg-start">
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    <a class="bruh" href="https://osu.ppy.sh/legal/en/Terms" target="_blank">Original Terms</a>
+    &
+    <a class="bruh" href="https://osu.ppy.sh/legal/en/Privacy"target="_blank">Original Privacy</a> <br>
+    osu! website redesign by: Angel Susantin <br> 20 January 2021 - 
+   contact: angelsusantin@gmail.com
+    <a class="text-light" href="#"></a>
+  </div>
+</footer>
+<!-- “Bootstrap 4 Modal.” Bootstrap 4 Modals, www.w3schools.com/bootstrap4/bootstrap_modal.asp. Accessed 19 Jan 2021. -->
+<!-- a simple search bar is made here to be a pop-up window (modal), instead of it being embedded in the navbar -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <input class="btn-block"type="text" placeholder="Search.." name="search">
+</body>
+</html>
+
+<!-- The font used throughout is Segoe UI -->
+<!-- I could not get my additional pages to work in its own separate folder, regardless of if I did foldername/filename.html in the href.
+When I placed them all in its own separate folder, it's like the additional pages do not have access to bootstrap 4-->
+
+
+
+
+
+
+
+
